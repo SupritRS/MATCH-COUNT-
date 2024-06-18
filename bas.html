@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div>
+                <h2 class="title">HOME</h2>
+                <div class="score-box">
+                    <h1 id="home-score" class="score electrolize-regular">0</h1>
+                </div>
+                <br>
+                <div class="button-container">
+                    <div class="btn electrolize-regular"><input type="button" value="+1" onclick="updateScore('home', 1)"></div>
+                    <div class="btn electrolize-regular"><input type="button" value="+2" onclick="updateScore('home', 2)"></div>
+                    <div class="btn electrolize-regular"><input type="button" value="+3" onclick="updateScore('home', 3)"></div>
+                </div>
+            </div>
+            <div>
+                <h2 class="title">GUEST</h2>
+                <div class="score-box">
+                    <h1 id="guest-score" class="score electrolize-regular">0</h1>
+                </div>
+                <br>
+                <div class="button-container">
+                    <div class="btn electrolize-regular"><input type="button" value="+1" onclick="updateScore('guest', 1)"></div>
+                    <div class="btn electrolize-regular"><input type="button" value="+2" onclick="updateScore('guest', 2)"></div>
+                    <div class="btn electrolize-regular"><input type="button" value="+3" onclick="updateScore('guest', 3)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./bas.js"></script>
+</body>
+</html>
